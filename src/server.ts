@@ -5,8 +5,8 @@ const app = express();
 
 app.use("/static", express.static("/public"));
 
-app.get("/card", (req, res) => {
-  const cardPath = path.join(__dirname, "./card.json");
+app.get("/card/major", (req, res) => {
+  const cardPath = path.join(__dirname, "./cards/major_card.json");
   res.json(require(cardPath));
 });
 
