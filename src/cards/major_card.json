@@ -1,5 +1,5 @@
 {
-  "total_card": 78,
+  "total_card": 22,
   "card": [
     {
       "id": 0,
@@ -416,8 +416,8 @@
       "card_yesorno": true
     },
     {
-      "id": 8,
-      "card_id": "ma-8",
+      "id": 9,
+      "card_id": "ma-9",
       "card_img": "https://upload.wikimedia.org/wikipedia/ko/4/4d/RWS_Tarot_09_Hermit.jpg",
       "card_arcana": "major",
       "card_name": [{"en": "The Hermit"}, {"ko": "은둔자"}],
