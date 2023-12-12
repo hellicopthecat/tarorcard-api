@@ -1,7 +1,9 @@
 import express from "express";
 import path from "path";
-
+import cors from "cors";
+const PORT = 8080;
 const app = express();
+app.use(cors());
 
 app.use("/static", express.static("/public"));
 
@@ -28,4 +30,5 @@ app.get("/card/minor/pentacle", (req, res) => {
 const serverListen = () => {
   console.log("Server is Connecting  http://localhost:3000 ✅");
 };
-app.listen(3000, serverListen);
+
+app.listen(PORT, serverListen);
