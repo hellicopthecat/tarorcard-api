@@ -11,7 +11,9 @@ app.use(cors());
 app.use("/static", express.static("/public"));
 
 app.get("/", (req, res) => {
-  res.send("Read README.md");
+  res.send(
+    "Read README.md <a href='https://github.com/hellicopthecat/tarotcard-api'>Go to Page</a>"
+  );
 });
 app.get("/card/major", (req, res) => {
   const majorCardPath = path.join(__dirname, "./src/cards/major_card.json");
